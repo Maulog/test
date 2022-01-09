@@ -124,3 +124,49 @@ const todoCompleted=todos.filter(function(todo){
     return todo.text;
 })
 console.log(todoCompleted);
+
+//条件语句
+const zz=10;
+
+if(zz==10||x<10){//===会考虑到数值类型//&&是与运算
+    console.log('zz is 10');
+}else if(x>10){
+    console.log('x is greater than 10')
+}
+else{
+    console.log('zz is not 10');
+}
+
+//三元操作符
+const color=zz>10?'rad':'blue';
+
+switch(color){
+    case 'red':
+        console.log('color is red');
+        break;
+    case 'blue':
+        console.log('color is blue');
+        break;
+    default:
+        console.log('color is not red or blue');
+        break;
+}
+
+function addNums(num1,num2){
+    return num1+num2;
+}
+console.log(addNums(2,3));
+
+//another function
+const addnums=(num1,num2)=> num1+num2;
+
+console.log(addNums(3,4));
+
+//constructor function
+function Pet(firestName,lastName,dob){
+    this.firstName=firstName;
+    this.lastName=lastName;
+    this.dob=dob;
+}
+
+//Instantiate object
